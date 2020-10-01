@@ -1,0 +1,10 @@
+.git
+node_modules
+src
+tests
+.babelrc
+jest.config.js
+yarn-error.log
+test.js
+tsconfig.json
+webpack.config.js
