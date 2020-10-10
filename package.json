@@ -27,7 +27,8 @@
     "build": "webpack --mode=production",
     "dev": "webpack --mode=development --watch",
     "test-watch": "jest --watchAll --no-cache",
-    "test": "jest --no-cache"
+    "test": "jest --no-cache",
+    "server": "nodemon build/server.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -51,6 +52,7 @@
     "ts-loader": "^8.0.4",
     "typescript": "^4.0.3",
     "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-node-externals": "^2.5.2"
   }
 }

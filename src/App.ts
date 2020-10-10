@@ -72,7 +72,7 @@ class App {
   run(): Promise<void> {
     return new Promise((resolve: Function, reject: Function) => {
       const name: string = this._settings.get('name');
-      const port: number = this._settings.get('hosts.' + name + '.port');
+      const port: number = this._settings.get('port');
       const cb: any = (err: Error): void => {
         if (err) {
           console.error(err);
@@ -84,7 +84,7 @@ class App {
           process.exit(1);
         }
       
-        this._logger.info(`${name} server listening on ${port}`);
+        this._logger.info(`${name} server listening on ${port} port. Open link in browser http://localhost:3000`);
 
         resolve();
       };

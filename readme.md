@@ -40,6 +40,8 @@ import { App } from 'ontime-lengo';
 import { UsersController } from './controllers/UsersController';
 
 function main() {
+  Container.register('settings', { ... });
+  Container.register('middlewares', [ ... ]);
   Container.register('controllers', [ Users ]);
     
   const app: App = Container.get<App>(App);

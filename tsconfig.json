@@ -4,7 +4,8 @@
     "module": "commonjs",
     "lib": ["esnext", "dom"],
     "moduleResolution": "node",
-    "declaration": false,
+    "declaration": true,
+    "declarationDir": "./build",
     "removeComments": true,
     "strict": true,
     "strictNullChecks": true,
@@ -20,10 +21,15 @@
     "paths": {
       "*": [
         "node_modules/*"
+      ],
+      "ontime-lengo": [
+        "build/index.js"
       ]
     }
   },
   "include": [
+    "examples/*.ts",
+    "examples/**/*.ts",
     "src/*.ts",
     "src/**/*.ts",
     "src/types.d.ts"
